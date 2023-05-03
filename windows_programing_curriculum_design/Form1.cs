@@ -26,5 +26,29 @@ namespace windows_programing_curriculum_design
             //    this.textBox1.AppendText("Name: " + reader["name"] + "\tScore: " + reader["score"]+"\n");
             data.Db.Instance.Nothing();
         }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            Console.WriteLine(e.X.ToString()+e.Y.ToString());
+            System.Diagnostics.Debug.WriteLine(e.X.ToString()+"," + e.Y.ToString());
+
+        }
+
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            //该函数将鼠标移动事件修改偏移量后向背景传递
+            MouseEventArgs ee = new MouseEventArgs(e.Button,e.Clicks
+                ,e.X
+                ,e.Y
+                ,e.Delta);
+            this.Form1_MouseMove(this,ee);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
