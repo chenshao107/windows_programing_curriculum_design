@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.loginButten = new System.Windows.Forms.Button();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.accountTextBox = new System.Windows.Forms.TextBox();
             this.loginPanel = new System.Windows.Forms.Panel();
@@ -39,17 +39,17 @@
             this.loginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // loginButten
             // 
-            this.button1.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(18, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(266, 51);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "登录";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
+            this.loginButten.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.loginButten.Location = new System.Drawing.Point(18, 198);
+            this.loginButten.Name = "loginButten";
+            this.loginButten.Size = new System.Drawing.Size(266, 51);
+            this.loginButten.TabIndex = 2;
+            this.loginButten.Text = "登录";
+            this.loginButten.UseVisualStyleBackColor = true;
+            this.loginButten.Click += new System.EventHandler(this.button1_Click);
+            this.loginButten.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button1_MouseMove);
             // 
             // passwordTextBox
             // 
@@ -78,7 +78,7 @@
             this.loginPanel.Controls.Add(this.tipLinkLabel);
             this.loginPanel.Controls.Add(this.passwordTextBox);
             this.loginPanel.Controls.Add(this.accountTextBox);
-            this.loginPanel.Controls.Add(this.button1);
+            this.loginPanel.Controls.Add(this.loginButten);
             this.loginPanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.loginPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.loginPanel.Location = new System.Drawing.Point(532, 63);
@@ -160,7 +160,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button loginButten;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox accountTextBox;
         private System.Windows.Forms.Panel loginPanel;

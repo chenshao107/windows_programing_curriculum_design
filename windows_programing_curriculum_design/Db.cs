@@ -42,10 +42,34 @@ namespace data
             return;
         }
 
+        
 
 
 
 
+    }
+
+    class User
+    {
+        //A为权限，0为管理员，1为学生
+        private int A { get;}
+        User(int x) 
+        {
+            A = x;
+        }
+        public void Run()
+        {
+            if(A == 0)
+            {
+                //运行管理员界面
+                
+            }else
+            {
+                //运行学生界面
+
+            }
+        }
+        
 
     }
 
