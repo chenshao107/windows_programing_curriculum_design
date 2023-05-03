@@ -16,9 +16,9 @@ namespace windows_programing_curriculum_design
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Form1 f= new Form1();
-            f.ShowDialog();
+            Application.Run(new Form1());
+            //Form1 f= new Form1();
+            //f.ShowDialog();
         }
     }
 }
