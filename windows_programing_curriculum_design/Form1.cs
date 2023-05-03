@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Data.Common;
+using data;
 
 namespace windows_programing_curriculum_design
 {
@@ -47,6 +48,21 @@ namespace windows_programing_curriculum_design
         private void button1_Click(object sender, EventArgs e)
         {
             //登录按钮
+            User a =Db.verify(accountTextBox.Text,passwordTextBox.Text);
+            if (a != null)
+            {
+                this.Hide();
+                Form f = a.GetForm();
+                f.ShowDialog();
+                System.Diagnostics.Debug.WriteLine("before show");
+                this.Show();
+
+            }
+            else
+            {
+                tipLinkLabel.Text="账号或者密码错误！";
+            }
+
 
         }
 

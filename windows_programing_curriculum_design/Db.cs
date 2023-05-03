@@ -42,31 +42,39 @@ namespace data
             return;
         }
 
-        
+        internal static User verify(string account, string password)
+        {
+            //暂时这么实现，以后连接数据库
+            if(account=="root")
+            {
+                return new User(0);
 
-
-
-
+            }else
+            {
+                return new User(1);
+            }
+        }
     }
 
     class User
     {
         //A为权限，0为管理员，1为学生
         private int A { get;}
-        User(int x) 
+        public User(int x) 
         {
             A = x;
         }
-        public void Run()
+        public Form GetForm()
         {
             if(A == 0)
             {
                 //运行管理员界面
+                return new windows_programing_curriculum_design.RootForm();
                 
             }else
             {
                 //运行学生界面
-
+                return new windows_programing_curriculum_design.StudentForm();
             }
         }
         
