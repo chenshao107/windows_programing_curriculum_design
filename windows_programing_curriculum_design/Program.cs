@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using data;
 
 namespace windows_programing_curriculum_design
 {
@@ -19,6 +20,8 @@ namespace windows_programing_curriculum_design
             Application.Run(new Form1());
             //Form1 f= new Form1();
             //f.ShowDialog();
+            
+
         }
     }
 }
