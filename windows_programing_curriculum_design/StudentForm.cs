@@ -16,5 +16,17 @@ namespace windows_programing_curriculum_design
         {
             InitializeComponent();
         }
+
+        private void StudentForm_Load(object sender, EventArgs e)
+        {
+            // TODO: 这行代码将数据加载到表“database2DataSet.tmp”中。您可以根据需要移动或移除它。
+            this.tmpTableAdapter.Fill(this.database2DataSet.tmp);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
