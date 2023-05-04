@@ -25,5 +25,21 @@ namespace windows_programing_curriculum_design
         }
 
 
+
+        private void lightAndWaterButten_Click(object sender, EventArgs e)
+        {
+            this.panel2.Controls.Clear();
+            studentLightAndWaterForm.Size = panel2.Size;
+            studentLightAndWaterForm.Show();
+            panel2.Controls.Add(studentLightAndWaterForm);
+        }
+
+        private void maintainButten_Click(object sender, EventArgs e)
+        {
+            this.panel2.Controls.Clear();
+            studentMaintainForm.Size = panel2.Size;
+            this.panel2.Controls.Add(studentMaintainForm);
+            studentMaintainForm.Show();
+        }
     }
 }

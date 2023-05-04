@@ -40,6 +40,7 @@
             this.accommodationButten = new System.Windows.Forms.Button();
             this.maintainButten = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSetBindingSource)).BeginInit();
@@ -84,10 +85,11 @@
             // 
             this.lightAndWaterButten.Location = new System.Drawing.Point(3, 3);
             this.lightAndWaterButten.Name = "lightAndWaterButten";
-            this.lightAndWaterButten.Size = new System.Drawing.Size(180, 106);
+            this.lightAndWaterButten.Size = new System.Drawing.Size(180, 105);
             this.lightAndWaterButten.TabIndex = 1;
             this.lightAndWaterButten.Text = "水电";
             this.lightAndWaterButten.UseVisualStyleBackColor = true;
+            this.lightAndWaterButten.Click += new System.EventHandler(this.lightAndWaterButten_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -102,14 +104,14 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(606, 112);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(606, 111);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // accommodationButten
             // 
             this.accommodationButten.Location = new System.Drawing.Point(248, 3);
             this.accommodationButten.Name = "accommodationButten";
-            this.accommodationButten.Size = new System.Drawing.Size(180, 106);
+            this.accommodationButten.Size = new System.Drawing.Size(180, 105);
             this.accommodationButten.TabIndex = 2;
             this.accommodationButten.Text = "住宿调整";
             this.accommodationButten.UseVisualStyleBackColor = true;
@@ -118,16 +120,18 @@
             // 
             this.maintainButten.Location = new System.Drawing.Point(493, 3);
             this.maintainButten.Name = "maintainButten";
-            this.maintainButten.Size = new System.Drawing.Size(110, 106);
+            this.maintainButten.Size = new System.Drawing.Size(110, 105);
             this.maintainButten.TabIndex = 3;
             this.maintainButten.Text = "报修";
             this.maintainButten.UseVisualStyleBackColor = true;
+            this.maintainButten.Click += new System.EventHandler(this.maintainButten_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(288, 12);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
@@ -136,11 +140,19 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(633, 469);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.Location = new System.Drawing.Point(3, 120);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(627, 346);
+            this.panel2.TabIndex = 3;
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 499);
+            this.ClientSize = new System.Drawing.Size(937, 509);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel1);
             this.Name = "StudentForm";
@@ -168,5 +180,10 @@
         private System.Windows.Forms.Button maintainButten;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.FontDialog fontDialog1;
+
+        //用户自定义控件窗口
+        private StudentLightAndWaterForm studentLightAndWaterForm=new StudentLightAndWaterForm();
+        private StudentMaintainForm studentMaintainForm=new StudentMaintainForm();
+        private System.Windows.Forms.Panel panel2;
     }
 }

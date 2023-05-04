@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database2DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,6 +97,18 @@
     <Compile Include="StudentForm.Designer.cs">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentLightAndWaterForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentLightAndWaterForm.Designer.cs">
+      <DependentUpon>StudentLightAndWaterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMaintainForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentMaintainForm.Designer.cs">
+      <DependentUpon>StudentMaintainForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +124,12 @@
     </Compile>
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLightAndWaterForm.resx">
+      <DependentUpon>StudentLightAndWaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMaintainForm.resx">
+      <DependentUpon>StudentMaintainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database2DataSet.xsc">
       <DependentUpon>Database2DataSet.xsd</DependentUpon>
