@@ -32,10 +32,10 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.accountTextBox = new System.Windows.Forms.TextBox();
             this.loginPanel = new System.Windows.Forms.Panel();
+            this.passwordLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.accountLinkLabel = new System.Windows.Forms.LinkLabel();
             this.tipLinkLabel = new System.Windows.Forms.LinkLabel();
             this.fromTitle = new System.Windows.Forms.Label();
-            this.accountLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.passwordLinkLabel = new System.Windows.Forms.LinkLabel();
             this.loginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +86,30 @@
             this.loginPanel.Size = new System.Drawing.Size(302, 327);
             this.loginPanel.TabIndex = 0;
             // 
+            // passwordLinkLabel
+            // 
+            this.passwordLinkLabel.AutoSize = true;
+            this.passwordLinkLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.passwordLinkLabel.LinkColor = System.Drawing.Color.Black;
+            this.passwordLinkLabel.Location = new System.Drawing.Point(18, 89);
+            this.passwordLinkLabel.Name = "passwordLinkLabel";
+            this.passwordLinkLabel.Size = new System.Drawing.Size(52, 27);
+            this.passwordLinkLabel.TabIndex = 4;
+            this.passwordLinkLabel.TabStop = true;
+            this.passwordLinkLabel.Text = "密码";
+            // 
+            // accountLinkLabel
+            // 
+            this.accountLinkLabel.AutoSize = true;
+            this.accountLinkLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.accountLinkLabel.LinkColor = System.Drawing.Color.Black;
+            this.accountLinkLabel.Location = new System.Drawing.Point(18, 4);
+            this.accountLinkLabel.Name = "accountLinkLabel";
+            this.accountLinkLabel.Size = new System.Drawing.Size(72, 27);
+            this.accountLinkLabel.TabIndex = 3;
+            this.accountLinkLabel.TabStop = true;
+            this.accountLinkLabel.Text = "用户名";
+            // 
             // tipLinkLabel
             // 
             this.tipLinkLabel.AutoSize = true;
@@ -109,37 +133,13 @@
             this.fromTitle.Text = "宿舍管理系统";
             this.fromTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // accountLinkLabel
-            // 
-            this.accountLinkLabel.AutoSize = true;
-            this.accountLinkLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.accountLinkLabel.LinkColor = System.Drawing.Color.Black;
-            this.accountLinkLabel.Location = new System.Drawing.Point(18, 4);
-            this.accountLinkLabel.Name = "accountLinkLabel";
-            this.accountLinkLabel.Size = new System.Drawing.Size(72, 27);
-            this.accountLinkLabel.TabIndex = 3;
-            this.accountLinkLabel.TabStop = true;
-            this.accountLinkLabel.Text = "用户名";
-            // 
-            // passwordLinkLabel
-            // 
-            this.passwordLinkLabel.AutoSize = true;
-            this.passwordLinkLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.passwordLinkLabel.LinkColor = System.Drawing.Color.Black;
-            this.passwordLinkLabel.Location = new System.Drawing.Point(18, 89);
-            this.passwordLinkLabel.Name = "passwordLinkLabel";
-            this.passwordLinkLabel.Size = new System.Drawing.Size(52, 27);
-            this.passwordLinkLabel.TabIndex = 4;
-            this.passwordLinkLabel.TabStop = true;
-            this.passwordLinkLabel.Text = "密码";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::windows_programing_curriculum_design.Properties.Resources.login;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(892, 509);
             this.Controls.Add(this.fromTitle);
             this.Controls.Add(this.loginPanel);
