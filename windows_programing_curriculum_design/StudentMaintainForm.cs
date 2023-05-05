@@ -16,5 +16,10 @@ namespace windows_programing_curriculum_design
         {
             InitializeComponent();
         }
+
+        private void StudentMaintainForm_SizeChanged(object sender, EventArgs e)
+        {
+            tableLayoutPanel1.Size = this.Size;
+        }
     }
 }

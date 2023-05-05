@@ -41,5 +41,17 @@ namespace windows_programing_curriculum_design
             this.panel2.Controls.Add(studentMaintainForm);
             studentMaintainForm.Show();
         }
+
+        private void StudentForm_SizeChanged(object sender, EventArgs e)
+        {
+            tableLayoutPanel3.Size = this.Size;
+            System.Diagnostics.Debug.WriteLine(tableLayoutPanel3.Size.ToString()+this.Size.ToString());
+        }
+
+        private void tableLayoutPanel3_SizeChanged(object sender, EventArgs e)
+        {
+            tableLayoutPanel2.Size = tableLayoutPanel3.Size;
+
+        }
     }
 }
