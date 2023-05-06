@@ -28,5 +28,10 @@ namespace windows_programing_curriculum_design
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

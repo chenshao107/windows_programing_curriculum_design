@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,13 +19,10 @@ namespace data
         //数据库实例构造函数
         private Db() 
         {
-            SQLiteConnection m_dbConnection;
             try
             {
                 //throw new NotImplementedException();
-                m_dbConnection = new SQLiteConnection();
-                m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
-                m_dbConnection.Open();
+                
             }
             catch (Exception ex)
             {

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
 using System.Data.Common;
 using data;
 
@@ -18,7 +17,6 @@ namespace windows_programing_curriculum_design
         public Form1()
         {
             InitializeComponent();
-            SQLiteConnection m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Version=3;");
             //m_dbConnection.Open();
             //string sql = "select * from highscores order by score desc";
             //SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
