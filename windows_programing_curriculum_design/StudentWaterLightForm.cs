@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace windows_programing_curriculum_design
 {
-    public partial class StudentLightWaterForm : Form
+    public partial class StudentWaterLightForm : UserControl
     {
-        public StudentLightWaterForm()
+        public StudentWaterLightForm()
         {
             InitializeComponent();
         }

@@ -465,7 +465,6 @@ namespace windows_programing_curriculum_design
 
 
         //自定义控件
-        private StudentLightWaterForm studentLightWaterForm=new StudentLightWaterForm();
         
     }
 }
