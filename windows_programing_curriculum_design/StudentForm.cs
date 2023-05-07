@@ -19,9 +19,6 @@ namespace windows_programing_curriculum_design
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
-            // TODO: 这行代码将数据加载到表“database2DataSet1.Room”中。您可以根据需要移动或移除它。
-            this.roomTableAdapter.Fill(this.database2DataSet1.Room);
-            
 
 
         }

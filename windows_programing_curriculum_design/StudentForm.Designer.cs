@@ -36,11 +36,8 @@ namespace windows_programing_curriculum_design
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.database2DataSet = new windows_programing_curriculum_design.Database2DataSet();
             this.database2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tmpBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tmpTableAdapter = new windows_programing_curriculum_design.Database2DataSetTableAdapters.tmpTableAdapter();
-            this.tableAdapterManager = new windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -61,16 +58,10 @@ namespace windows_programing_curriculum_design
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tableAdapterManager1 = new windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager();
-            this.tmpTableAdapter1 = new windows_programing_curriculum_design.Database2DataSetTableAdapters.tmpTableAdapter();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.database2DataSet1 = new windows_programing_curriculum_design.Database2DataSet1();
             this.roomBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.roomTableAdapter = new windows_programing_curriculum_design.Database2DataSet1TableAdapters.RoomTableAdapter();
-            this.tableAdapterManager2 = new windows_programing_curriculum_design.Database2DataSet1TableAdapters.TableAdapterManager();
-            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tmpBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
@@ -85,34 +76,20 @@ namespace windows_programing_curriculum_design
             this.tableLayoutPanel9.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // database2DataSet
-            // 
-            this.database2DataSet.DataSetName = "Database2DataSet";
-            this.database2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // database2DataSetBindingSource
-            // 
-            this.database2DataSetBindingSource.DataSource = this.database2DataSet;
+
             this.database2DataSetBindingSource.Position = 0;
             // 
             // tmpBindingSource
             // 
             this.tmpBindingSource.DataMember = "tmp";
-            this.tmpBindingSource.DataSource = this.database2DataSet;
             // 
             // tmpTableAdapter
             // 
-            this.tmpTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.tmpTableAdapter = this.tmpTableAdapter;
-            this.tableAdapterManager.UpdateOrder = windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // panel1
             // 
@@ -370,20 +347,8 @@ namespace windows_programing_curriculum_design
             this.label2.TabIndex = 2;
             this.label2.Text = "627";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableAdapterManager1
-            // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.tmpTableAdapter = null;
-            this.tableAdapterManager1.UpdateOrder = windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // tmpTableAdapter1
-            // 
-            this.tmpTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tableLayoutPanel9
-            // 
+
+ 
             this.tableLayoutPanel9.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
@@ -435,29 +400,14 @@ namespace windows_programing_curriculum_design
             // 
             // database2DataSet1
             // 
-            this.database2DataSet1.DataSetName = "Database2DataSet1";
-            this.database2DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+
             // roomBindingSource
             // 
             this.roomBindingSource.DataMember = "Room";
-            this.roomBindingSource.DataSource = this.database2DataSet1;
             // 
             // roomTableAdapter
             // 
-            this.roomTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager2
-            // 
-            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager2.RepairTableAdapter = null;
-            this.tableAdapterManager2.RoomTableAdapter = this.roomTableAdapter;
-            this.tableAdapterManager2.StudentTableTableAdapter = null;
-            this.tableAdapterManager2.TransfeTableAdapter = null;
-            this.tableAdapterManager2.UpdateOrder = windows_programing_curriculum_design.Database2DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // StudentForm
-            // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -470,7 +420,6 @@ namespace windows_programing_curriculum_design
             this.ShowIcon = false;
             this.Text = "学生窗口";
             this.Load += new System.EventHandler(this.StudentForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tmpBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -492,7 +441,6 @@ namespace windows_programing_curriculum_design
             this.tableLayoutPanel9.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -500,10 +448,7 @@ namespace windows_programing_curriculum_design
 
         #endregion
         private System.Windows.Forms.BindingSource database2DataSetBindingSource;
-        private Database2DataSet database2DataSet;
         private System.Windows.Forms.BindingSource tmpBindingSource;
-        private Database2DataSetTableAdapters.tmpTableAdapter tmpTableAdapter;
-        private Database2DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
@@ -524,15 +469,10 @@ namespace windows_programing_curriculum_design
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private Database2DataSetTableAdapters.TableAdapterManager tableAdapterManager1;
-        private Database2DataSetTableAdapters.tmpTableAdapter tmpTableAdapter1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private Database2DataSet1 database2DataSet1;
         private System.Windows.Forms.BindingSource roomBindingSource;
-        private Database2DataSet1TableAdapters.RoomTableAdapter roomTableAdapter;
-        private Database2DataSet1TableAdapters.TableAdapterManager tableAdapterManager2;
 
 
         //自定义控件
