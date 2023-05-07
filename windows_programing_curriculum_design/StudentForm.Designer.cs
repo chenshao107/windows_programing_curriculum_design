@@ -78,18 +78,10 @@ namespace windows_programing_curriculum_design
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             this.SuspendLayout();
-
-            this.database2DataSetBindingSource.Position = 0;
             // 
             // tmpBindingSource
             // 
             this.tmpBindingSource.DataMember = "tmp";
-            // 
-            // tmpTableAdapter
-            // 
-            // 
-            // tableAdapterManager
-            // 
             // 
             // panel1
             // 
@@ -347,8 +339,9 @@ namespace windows_programing_curriculum_design
             this.label2.TabIndex = 2;
             this.label2.Text = "627";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
- 
+            // 
+            // tableLayoutPanel9
+            // 
             this.tableLayoutPanel9.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel9.ColumnCount = 2;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
@@ -398,16 +391,12 @@ namespace windows_programing_curriculum_design
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
-            // database2DataSet1
-            // 
-
             // roomBindingSource
             // 
             this.roomBindingSource.DataMember = "Room";
             // 
-            // roomTableAdapter
+            // StudentForm
             // 
-
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
