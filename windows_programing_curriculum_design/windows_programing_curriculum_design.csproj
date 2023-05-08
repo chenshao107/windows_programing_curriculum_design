@@ -106,6 +106,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RechargeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechargeForm.Designer.cs">
+      <DependentUpon>RechargeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repair.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RechargeForm.resx">
+      <DependentUpon>RechargeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
@@ -197,6 +206,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <None Include="Resources\20度圆角矩形.png" />
+    <None Include="Resources\多云.png" />
     <Content Include="SQLite.Interop.dll" />
   </ItemGroup>
   <ItemGroup>

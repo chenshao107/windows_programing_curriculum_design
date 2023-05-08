@@ -63,5 +63,11 @@ namespace windows_programing_curriculum_design
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            RechargeForm rechargeForm = new RechargeForm();
+            rechargeForm.ShowDialog();
+        }
     }
 }
