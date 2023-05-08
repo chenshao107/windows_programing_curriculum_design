@@ -387,9 +387,11 @@ namespace windows_programing_curriculum_design
             series1.BackImageTransparentColor = System.Drawing.Color.Transparent;
             series1.BorderColor = System.Drawing.Color.Transparent;
             series1.ChartArea = "ChartArea1";
+            series1.Label = "#VAL{C2}";
             series1.Legend = "Legend1";
             series1.Name = "上个月";
             series2.ChartArea = "ChartArea1";
+            series2.Label = "#VAL{C2}";
             series2.Legend = "Legend1";
             series2.Name = "本月";
             this.chart1.Series.Add(series1);
