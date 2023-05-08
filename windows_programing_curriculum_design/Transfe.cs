@@ -14,8 +14,7 @@ namespace windows_programing_curriculum_design
     
     public partial class Transfe
     {
-        public string StudentId { get; set; }
-        public Nullable<int> RoomId { get; set; }
+        public int RoomId { get; set; }
         public string Reason { get; set; }
     }
 }

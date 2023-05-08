@@ -13,10 +13,10 @@ namespace windows_programing_curriculum_design
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Database2Entities : DbContext
+    public partial class Database2Entities2 : DbContext
     {
-        public Database2Entities()
-            : base("name=Database2Entities")
+        public Database2Entities2()
+            : base("name=Database2Entities2")
         {
         }
     
