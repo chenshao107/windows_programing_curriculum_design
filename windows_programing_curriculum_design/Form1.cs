@@ -31,6 +31,7 @@ namespace windows_programing_curriculum_design
             //设计废案
             //Console.WriteLine(e.X.ToString()+e.Y.ToString());
             //System.Diagnostics.Debug.WriteLine(e.X.ToString()+"," + e.Y.ToString());
+            
 
         }
 
