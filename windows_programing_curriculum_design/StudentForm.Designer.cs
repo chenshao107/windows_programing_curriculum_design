@@ -4,6 +4,13 @@ namespace windows_programing_curriculum_design
 {
     partial class StudentForm
     {
+        //public接口
+        public void SetRoomId(string  roomId)
+        {
+            label2.Text=roomId;
+        }
+
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -464,7 +471,9 @@ namespace windows_programing_curriculum_design
         private System.Windows.Forms.BindingSource roomBindingSource;
 
 
-        //自定义控件
+        //自定义函数
+
+        
 
     }
 }

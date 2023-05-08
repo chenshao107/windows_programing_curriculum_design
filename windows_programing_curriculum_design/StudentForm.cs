@@ -19,7 +19,8 @@ namespace windows_programing_curriculum_design
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
-
+            //加载char1表格数据
+            
 
         }
 

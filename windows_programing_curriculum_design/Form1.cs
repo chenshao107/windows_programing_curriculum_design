@@ -46,21 +46,31 @@ namespace windows_programing_curriculum_design
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tipLinkLabel.Text = "";
             //登录按钮，校验账号和密码
             User a =Db.verify(accountTextBox.Text,passwordTextBox.Text);
+            
             if (a != null)
             {
                 //隐藏登录界面
                 this.Hide();
-                //获得 用户/管理员 界面，因为两个界面都是Form子类，所以可以用Form类型接收
-                Form f = a.GetForm();
-                //阻塞运行窗口，直到关闭
-                f.ShowDialog();
-                System.Diagnostics.Debug.WriteLine("before show");
-                //重新显示登录窗口
+                if(a.A==0)
+                {
+                    //创建管理员界面
+                    RootForm roomForm= new RootForm();
+                    //阻塞运行窗口，直到退出
+                    roomForm.ShowDialog();
+                }else
+                {
+                    //创建学生窗口
+                    StudentForm studentForm= new StudentForm();
+                    //填写相关信息
+                    studentForm.SetRoomId(accountTextBox.Text);
+                    //阻塞运行窗口，直到退出
+                    studentForm.ShowDialog();
+                    
+                }
+                //重新展示登录界面
                 this.Show();
-
             }
             else
             {

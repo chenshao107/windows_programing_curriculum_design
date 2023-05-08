@@ -79,23 +79,10 @@ namespace data
     class User
     {
         //A为权限，0为管理员，1为学生
-        private int A { get;}
+        public int A { get;}
         public User(int x) 
         {
             A = x;
-        }
-        public Form GetForm()
-        {
-            if(A == 0)
-            {
-                //运行管理员界面
-                return new windows_programing_curriculum_design.RootForm();
-                
-            }else
-            {
-                //运行学生界面
-                return new windows_programing_curriculum_design.StudentForm();
-            }
         }
 
 
