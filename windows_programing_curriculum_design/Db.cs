@@ -63,7 +63,16 @@ namespace data
 
                 //查询对应房间号记录
                 //将房号转为int类型
-                int roomId=Convert.ToInt32(account);
+                int roomId;
+                //将账号转int的语句放于try catch中，因为可能会失败，捕捉异常
+                try
+                {
+                    roomId = Convert.ToInt32(account);
+
+                }catch (Exception ex)
+                {
+                    return null;
+                }
                 var temp=db.Room.Where(x=>x.RoomId==roomId).First();
                 System.Diagnostics.Debug.WriteLine(temp.ToString());  
                 //判断密码是否正确
