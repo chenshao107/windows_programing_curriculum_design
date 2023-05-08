@@ -13,7 +13,7 @@ namespace windows_programing_curriculum_design
 {
     public partial class StudentForm : Form
     {
-        private void FlashChartData()
+        private void FlashChartData()//刷新表格
         {
             Database2Entities2 database2Entities2 = new Database2Entities2();
             var studentDate = database2Entities2.Room.Where(x => x.RoomId == _roomId).First();
@@ -25,8 +25,18 @@ namespace windows_programing_curriculum_design
             chart1.Series[0].Points.DataBindXY(xData,yData);
             yData = new List<decimal>() { studentDate.Light.Value, studentDate.Water.Value };
             chart1.Series[1].Points.DataBindY(yData);
-            
+        }
 
+        private void FlashBalance()//刷新水电余额
+        {
+            //用数据库实体获取数据
+            Database2Entities2 database2Entities2 = new Database2Entities2();
+            var studentDate = database2Entities2.Room.Where(x => x.RoomId == _roomId).First();
+            //更新标签
+            label6.Text = $"余额:{studentDate.Balance}￥";
+            //低于20块用红色显示，其余蓝色
+            if (studentDate.Balance < 20) label6.ForeColor = Color.Red;
+            else label6.ForeColor= Color.Green;
         }
 
         public StudentForm()
@@ -39,7 +49,7 @@ namespace windows_programing_curriculum_design
 
             //加载char1表格数据
             FlashChartData();
-
+            FlashBalance();
             
 
         }
