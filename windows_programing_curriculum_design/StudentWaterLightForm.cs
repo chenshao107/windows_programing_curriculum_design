@@ -75,7 +75,9 @@ namespace windows_programing_curriculum_design
         private void RechargeButton_Click(object sender, EventArgs e)
         {
             RechargeForm rechargeForm = new RechargeForm(_roomId);
+            //充值窗口阻塞运行
             rechargeForm.ShowDialog();
+            //充值完毕刷新余额
             FlashBalance();
         }
     }
