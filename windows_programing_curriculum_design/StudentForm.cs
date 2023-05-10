@@ -70,5 +70,49 @@ namespace windows_programing_curriculum_design
             rechargeForm.ShowDialog();
             FlashBalance();
         }
+
+        private void tableLayoutPanel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+
+
+
+
+        private void tableLayoutPanel6_MouseUp(object sender, MouseEventArgs e)
+        {
+            panel2.BackColor = Color.LightBlue;
+            panel4.BackColor = Color.Transparent;
+            panel3.BackColor = Color.LightBlue;
+        }
+
+        private void tableLayoutPanel4_MouseUp(object sender, MouseEventArgs e)
+        {
+            panel2.BackColor = Color.LightBlue;
+            panel4.BackColor = Color.LightBlue;
+            panel3.BackColor = Color.Transparent;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.Blue;
+            panel4.BackColor = Color.Transparent;
+            panel3.BackColor = Color.Transparent;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.Transparent;
+            panel4.BackColor = Color.Blue;
+            panel3.BackColor = Color.Transparent;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.Transparent;
+            panel4.BackColor = Color.Transparent;
+            panel3.BackColor = Color.Blue;
+        }
     }
 }

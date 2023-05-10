@@ -163,6 +163,7 @@ namespace windows_programing_curriculum_design
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(3, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 27);
@@ -179,10 +180,11 @@ namespace windows_programing_curriculum_design
             this.button2.TabIndex = 1;
             this.button2.Text = "button1";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
@@ -226,6 +228,7 @@ namespace windows_programing_curriculum_design
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(3, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 28);
@@ -246,10 +249,11 @@ namespace windows_programing_curriculum_design
             this.button1.Size = new System.Drawing.Size(141, 84);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.BackColor = System.Drawing.Color.Blue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(1, 1);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
@@ -292,6 +296,7 @@ namespace windows_programing_curriculum_design
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
             this.label5.Location = new System.Drawing.Point(3, 92);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(143, 28);
@@ -308,10 +313,11 @@ namespace windows_programing_curriculum_design
             this.button3.TabIndex = 1;
             this.button3.Text = "button1";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
