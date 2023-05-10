@@ -83,6 +83,16 @@ namespace windows_programing_curriculum_design.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 三点 {
+            get {
+                object obj = ResourceManager.GetObject("三点", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 圆角矩形6 {
             get {
                 object obj = ResourceManager.GetObject("圆角矩形6", resourceCulture);
@@ -103,9 +113,39 @@ namespace windows_programing_curriculum_design.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 小闪电 {
+            get {
+                object obj = ResourceManager.GetObject("小闪电", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 扳手 {
+            get {
+                object obj = ResourceManager.GetObject("扳手", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 鲸鱼 {
             get {
                 object obj = ResourceManager.GetObject("鲸鱼", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 黑闪电 {
+            get {
+                object obj = ResourceManager.GetObject("黑闪电", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

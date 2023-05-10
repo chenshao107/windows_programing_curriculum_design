@@ -207,6 +207,10 @@
     </Content>
     <None Include="Resources\20度圆角矩形.png" />
     <None Include="Resources\多云.png" />
+    <None Include="Resources\小闪电.png" />
+    <None Include="Resources\黑闪电.png" />
+    <None Include="Resources\扳手.png" />
+    <None Include="Resources\三点.png" />
     <Content Include="SQLite.Interop.dll" />
   </ItemGroup>
   <ItemGroup>

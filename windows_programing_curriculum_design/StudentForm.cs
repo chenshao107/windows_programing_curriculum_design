@@ -96,6 +96,7 @@ namespace windows_programing_curriculum_design
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //让该按钮的左侧panel变蓝色，其他两个变透明
             panel2.BackColor = Color.Blue;
             panel4.BackColor = Color.Transparent;
             panel3.BackColor = Color.Transparent;
@@ -103,6 +104,7 @@ namespace windows_programing_curriculum_design
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //让该按钮的左侧panel变蓝色，其他两个变透明
             panel2.BackColor = Color.Transparent;
             panel4.BackColor = Color.Blue;
             panel3.BackColor = Color.Transparent;
@@ -110,6 +112,7 @@ namespace windows_programing_curriculum_design
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //让该按钮的左侧panel变蓝色，其他两个变透明
             panel2.BackColor = Color.Transparent;
             panel4.BackColor = Color.Transparent;
             panel3.BackColor = Color.Blue;
