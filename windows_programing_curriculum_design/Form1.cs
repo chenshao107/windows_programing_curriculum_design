@@ -79,6 +79,15 @@ namespace windows_programing_curriculum_design
 
         }
 
+        
 
+
+        private void passwordTextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
+        }
     }
 }
