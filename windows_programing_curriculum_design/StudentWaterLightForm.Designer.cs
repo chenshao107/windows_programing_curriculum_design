@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
@@ -44,6 +44,7 @@
             // 
             // tableLayoutPanel10
             // 
+            this.tableLayoutPanel10.AutoSize = true;
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -74,6 +75,7 @@
             // 
             // button4
             // 
+            this.button4.AutoSize = true;
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImage = global::windows_programing_curriculum_design.Properties.Resources._20度圆角矩形;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -111,27 +113,27 @@
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
             this.chart1.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chart1.Enabled = false;
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(10, 10);
             this.chart1.Margin = new System.Windows.Forms.Padding(10);
             this.chart1.Name = "chart1";
-            series5.BackImageTransparentColor = System.Drawing.Color.Transparent;
-            series5.BorderColor = System.Drawing.Color.Transparent;
-            series5.ChartArea = "ChartArea1";
-            series5.Label = "#VAL{C2}";
-            series5.Legend = "Legend1";
-            series5.Name = "上个月";
-            series6.ChartArea = "ChartArea1";
-            series6.Label = "#VAL{C2}";
-            series6.Legend = "Legend1";
-            series6.Name = "本月";
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
+            series9.BackImageTransparentColor = System.Drawing.Color.Transparent;
+            series9.BorderColor = System.Drawing.Color.Transparent;
+            series9.ChartArea = "ChartArea1";
+            series9.Label = "#VAL{C2}";
+            series9.Legend = "Legend1";
+            series9.Name = "上个月";
+            series10.ChartArea = "ChartArea1";
+            series10.Label = "#VAL{C2}";
+            series10.Legend = "Legend1";
+            series10.Name = "本月";
+            this.chart1.Series.Add(series9);
+            this.chart1.Series.Add(series10);
             this.chart1.Size = new System.Drawing.Size(393, 520);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -149,6 +151,7 @@
             this.tableLayoutPanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

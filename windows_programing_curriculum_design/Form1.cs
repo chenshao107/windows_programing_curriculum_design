@@ -63,9 +63,7 @@ namespace windows_programing_curriculum_design
                 }else
                 {
                     //创建学生窗口
-                    StudentForm studentForm= new StudentForm();
-                    //填写相关信息
-                    studentForm.SetRoomId(Convert.ToInt32(accountTextBox.Text));
+                    StudentForm studentForm= new StudentForm(Convert.ToInt32(accountTextBox.Text));
                     //阻塞运行窗口，直到退出
                     studentForm.ShowDialog();
                     

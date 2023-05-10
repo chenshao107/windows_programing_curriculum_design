@@ -12,9 +12,10 @@ namespace windows_programing_curriculum_design
 {
     public partial class MaintainForm : UserControl
     {
-        public MaintainForm()
+        public MaintainForm(int roomId)
         {
             InitializeComponent();
+            _roomId = roomId;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
