@@ -22,7 +22,14 @@ namespace windows_programing_curriculum_design
         private void AddBalance(int addBalence)
         {
             //定义数据库实体
-            Database2Entities2 database2Entities2 = new Database2Entities2();
+            Database2Entities2 database2Entities2;
+            try { 
+                database2Entities2 = new Database2Entities2();
+            }catch(Exception ex)
+            {
+                MessageBox.Show("数据库连接异常");
+                throw ex;
+            }
             var roomData = database2Entities2.Room.Where(x => x.RoomId == _roomId).First();
             roomData.Balance += addBalence;
             //对余额进行修改

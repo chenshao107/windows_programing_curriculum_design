@@ -70,6 +70,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.Location = new System.Drawing.Point(3, 23);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -136,6 +137,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "提交";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MaintainForm
             // 

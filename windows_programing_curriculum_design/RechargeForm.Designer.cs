@@ -56,7 +56,7 @@ namespace windows_programing_curriculum_design
             this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(100);
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(728, 470);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(751, 470);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // button1
@@ -69,7 +69,7 @@ namespace windows_programing_curriculum_design
             this.button1.Location = new System.Drawing.Point(110, 110);
             this.button1.Margin = new System.Windows.Forms.Padding(10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(244, 250);
+            this.button1.Size = new System.Drawing.Size(255, 250);
             this.button1.TabIndex = 0;
             this.button1.Text = "50￥";
             this.button1.UseVisualStyleBackColor = false;
@@ -82,10 +82,10 @@ namespace windows_programing_curriculum_design
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("微软雅黑", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(374, 110);
+            this.button2.Location = new System.Drawing.Point(385, 110);
             this.button2.Margin = new System.Windows.Forms.Padding(10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(244, 250);
+            this.button2.Size = new System.Drawing.Size(256, 250);
             this.button2.TabIndex = 0;
             this.button2.Text = "100￥";
             this.button2.UseVisualStyleBackColor = false;
@@ -98,7 +98,7 @@ namespace windows_programing_curriculum_design
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = global::windows_programing_curriculum_design.Properties.Resources.多云;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(728, 470);
+            this.ClientSize = new System.Drawing.Size(751, 470);
             this.Controls.Add(this.tableLayoutPanel2);
             this.DoubleBuffered = true;
             this.Name = "RechargeForm";

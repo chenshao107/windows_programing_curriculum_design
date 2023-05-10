@@ -25,7 +25,16 @@ namespace windows_programing_curriculum_design
 
         private void FlashChartData()//刷新表格
         {
-            Database2Entities2 database2Entities2 = new Database2Entities2();
+            Database2Entities2 database2Entities2;
+            try
+            {
+                database2Entities2 = new Database2Entities2();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("数据库连接异常");
+                throw ex;
+            }
             var studentDate = database2Entities2.Room.Where(x => x.RoomId == _roomId).First();
             Series series = new Series();
             series.Name = "水电费用详情";
@@ -40,7 +49,16 @@ namespace windows_programing_curriculum_design
         private void FlashBalance()//刷新水电余额
         {
             //用数据库实体获取数据
-            Database2Entities2 database2Entities2 = new Database2Entities2();
+            Database2Entities2 database2Entities2;
+            try
+            {
+                database2Entities2 = new Database2Entities2();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("数据库连接异常");
+                throw ex;
+            }
             var studentDate = database2Entities2.Room.Where(x => x.RoomId == _roomId).First();
             //更新标签
             label6.Text = $"余额:{studentDate.Balance}￥";

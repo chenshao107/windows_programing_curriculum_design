@@ -30,7 +30,16 @@ namespace data
 
         internal static User verify(string account, string password)
         {
-            Database2Entities2 db = new Database2Entities2();
+            Database2Entities2 db;
+            try
+            {
+                db = new Database2Entities2();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("数据库连接异常");
+                throw ex;
+            }
 
             //如果账号是root说明是管理员登录
             if (account=="root")

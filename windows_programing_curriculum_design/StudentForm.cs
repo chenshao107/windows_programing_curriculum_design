@@ -22,6 +22,7 @@ namespace windows_programing_curriculum_design
             _studentWaterLightForm=new StudentWaterLightForm(roomId);
             _studentWaterLightForm.Dock= DockStyle.Fill;
             _maintainForm = new MaintainForm(roomId);
+            _maintainForm.Dock= DockStyle.Fill;
             panel5.Controls.Clear();
             panel5.Controls.Add( _studentWaterLightForm );
             _studentWaterLightForm.Show();
@@ -40,6 +41,9 @@ namespace windows_programing_curriculum_design
             panel2.BackColor = Color.Blue;
             panel4.BackColor = Color.Transparent;
             panel3.BackColor = Color.Transparent;
+            //将水电加载到窗口panel5中
+            panel5.Controls.Clear();
+            panel5.Controls.Add(_studentWaterLightForm);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,6 +52,10 @@ namespace windows_programing_curriculum_design
             panel2.BackColor = Color.Transparent;
             panel4.BackColor = Color.Blue;
             panel3.BackColor = Color.Transparent;
+
+            //将报修加载到窗口panel5中
+            panel5.Controls.Clear();
+            panel5.Controls.Add(_maintainForm);
 
         }
 
