@@ -575,13 +575,13 @@ namespace windows_programing_curriculum_design
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.BindingSource roomBindingSource;
-
-
-        //自定义成员变量
-        int _roomId;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.Label label6;
+
+        //自定义成员变量
+        int _roomId;
+
     }
 }
