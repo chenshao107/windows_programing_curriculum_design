@@ -35,8 +35,18 @@ namespace windows_programing_curriculum_design
             //对余额进行修改
             database2Entities2.Entry<Room>(roomData).Property(x => x.Balance).IsModified=true; 
             //对saveChange的返回值进行检查，1表示成功
-            string s = database2Entities2.SaveChanges()==1?"充值成功":"充值失败";
-            MessageBox.Show(s);
+            try
+            {
+                database2Entities2.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("充值失败！");
+                this.Close();
+                return;
+            }
+            MessageBox.Show("充值成功！");
+
             //关闭充值窗口
             this.Close();
 

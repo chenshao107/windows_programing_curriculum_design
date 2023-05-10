@@ -82,7 +82,18 @@ namespace data
                 {
                     return null;
                 }
-                var temp=db.Room.Where(x=>x.RoomId==roomId).First();
+
+                Room temp;
+                //尝试查询该房号的数据
+                try {
+                    temp = db.Room.Where(x => x.RoomId == roomId).First();
+                }
+                catch(Exception ex)
+                {
+                    //差不到，返回空
+                    return null;
+                }
+
                 System.Diagnostics.Debug.WriteLine(temp.ToString());  
                 //判断密码是否正确
                 if(temp.Password==password)
