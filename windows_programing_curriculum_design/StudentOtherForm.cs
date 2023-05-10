@@ -17,5 +17,51 @@ namespace windows_programing_curriculum_design
             InitializeComponent();
             _roomId = roomId;
         }
+
+        private void StudentOtherForm_Load(object sender, EventArgs e)
+        {
+            radioButton1.Checked=true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //定义数据库实体
+            Database2Entities2 database2Entities2;
+            try
+            {
+                database2Entities2 = new Database2Entities2();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("数据库连接异常");
+                throw ex;
+            }
+            //将各种信息填入该结构体
+            Transfe  transfe = new Transfe();
+            //填入房号
+            transfe.RoomId = _roomId;
+            //填入退宿/换宿
+            string s;
+            if(radioButton1.Checked)
+            {
+                s = "[退宿]";
+            }else
+            {
+                s = "[换宿]";
+            }
+            transfe.Reason = s+textBox1.Text;
+            database2Entities2.Transfe.Add(transfe);
+            //对saveChange的返回值进行检查
+            try
+            {
+                database2Entities2.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("提交失败！可能您已经有待处理的问题，请勿重复提交！");
+                return;
+            }
+            MessageBox.Show("提交成功！");
+        }
     }
 }

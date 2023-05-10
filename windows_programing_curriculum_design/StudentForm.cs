@@ -32,7 +32,8 @@ namespace windows_programing_curriculum_design
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
-
+            label1.Text = "T11";
+            label2.Text=Convert.ToString(_roomId);
         }
         private void button1_Click(object sender, EventArgs e)
         {
