@@ -42,5 +42,7 @@
         }
 
         #endregion
+
+        private int _roomId;
     }
 }

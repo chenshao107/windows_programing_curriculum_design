@@ -12,9 +12,10 @@ namespace windows_programing_curriculum_design
 {
     public partial class StudentOtherForm : UserControl
     {
-        public StudentOtherForm()
+        public StudentOtherForm(int roomId)
         {
             InitializeComponent();
+            _roomId = roomId;
         }
     }
 }

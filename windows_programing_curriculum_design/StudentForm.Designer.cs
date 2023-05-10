@@ -462,6 +462,7 @@ namespace windows_programing_curriculum_design
         int _roomId;
         StudentWaterLightForm _studentWaterLightForm;
         MaintainForm _maintainForm;
+        StudentOtherForm _studentOtherForm;
 
     }
 }
