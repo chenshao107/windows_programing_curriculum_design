@@ -105,7 +105,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.radioButton1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
             this.radioButton1.Location = new System.Drawing.Point(3, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(94, 20);
@@ -119,7 +119,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.radioButton2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radioButton2.Location = new System.Drawing.Point(103, 3);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(94, 20);
