@@ -63,5 +63,10 @@ namespace windows_programing_curriculum_design
             }
             MessageBox.Show("提交成功！");
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
