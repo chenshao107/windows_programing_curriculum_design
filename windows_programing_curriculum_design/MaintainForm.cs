@@ -61,6 +61,14 @@ namespace windows_programing_curriculum_design
             }
             MessageBox.Show("提交成功！");
 
+            //打印出表中所有记录，检验
+            var tmp = database2Entities2.Repair;
+            foreach (var item in tmp)
+            {
+                System.Diagnostics.Debug.WriteLine(item.RoomId+"\t"+item.Problem+"t"
+                    + item.AppointmentDate.ToString());
+
+            }
         }
     }
 }

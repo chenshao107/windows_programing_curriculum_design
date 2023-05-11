@@ -36,6 +36,7 @@ namespace windows_programing_curriculum_design
                 MessageBox.Show("数据库连接异常");
                 throw ex;
             }
+            
             //将各种信息填入该结构体
             Transfe  transfe = new Transfe();
             //填入房号
@@ -62,11 +63,16 @@ namespace windows_programing_curriculum_design
                 return;
             }
             MessageBox.Show("提交成功！");
-        }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
+            //打印出表中所有记录，检验
+            var tmp = database2Entities2.Transfe;
+            foreach(var item in tmp)
+            {
+                System.Diagnostics.Debug.WriteLine(item.RoomId);
+                System.Diagnostics.Debug.WriteLine(item.Reason);
+                System.Diagnostics.Debug.WriteLine(666666666666);
 
+            }
         }
     }
 }
