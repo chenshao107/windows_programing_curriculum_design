@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 
 namespace windows_programing_curriculum_design
 {
@@ -463,6 +464,8 @@ namespace windows_programing_curriculum_design
         StudentWaterLightForm _studentWaterLightForm;
         MaintainForm _maintainForm;
         StudentOtherForm _studentOtherForm;
+        List<StudentTable> _members;
+
 
     }
 }

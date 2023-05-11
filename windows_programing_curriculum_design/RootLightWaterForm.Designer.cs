@@ -30,10 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RootLightWaterForm));
-            this.database2DataSet = new windows_programing_curriculum_design.Database2DataSet();
             this.repairBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.repairTableAdapter = new windows_programing_curriculum_design.Database2DataSetTableAdapters.RepairTableAdapter();
-            this.tableAdapterManager = new windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager();
             this.repairBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -47,7 +44,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.repairBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repairBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repairBindingNavigator)).BeginInit();
             this.repairBindingNavigator.SuspendLayout();
@@ -55,29 +51,17 @@
             // 
             // database2DataSet
             // 
-            this.database2DataSet.DataSetName = "Database2DataSet";
-            this.database2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // repairBindingSource
             // 
             this.repairBindingSource.DataMember = "Repair";
-            this.repairBindingSource.DataSource = this.database2DataSet;
             // 
             // repairTableAdapter
             // 
-            this.repairTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.RepairTableAdapter = this.repairTableAdapter;
-            this.tableAdapterManager.RoomTableAdapter = null;
-            this.tableAdapterManager.RootPasswordTableAdapter = null;
-            this.tableAdapterManager.StudentTableTableAdapter = null;
-            this.tableAdapterManager.TransfeTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.yyyTableAdapter = null;
-            // 
+       
             // repairBindingNavigator
             // 
             this.repairBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -211,7 +195,6 @@
             this.Controls.Add(this.repairBindingNavigator);
             this.Name = "RootLightWaterForm";
             this.Size = new System.Drawing.Size(908, 576);
-            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repairBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repairBindingNavigator)).EndInit();
             this.repairBindingNavigator.ResumeLayout(false);
@@ -223,10 +206,7 @@
 
         #endregion
 
-        private Database2DataSet database2DataSet;
         private System.Windows.Forms.BindingSource repairBindingSource;
-        private Database2DataSetTableAdapters.RepairTableAdapter repairTableAdapter;
-        private Database2DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator repairBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

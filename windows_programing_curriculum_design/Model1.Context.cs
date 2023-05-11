@@ -30,5 +30,6 @@ namespace windows_programing_curriculum_design
         public virtual DbSet<RootPassword> RootPassword { get; set; }
         public virtual DbSet<StudentTable> StudentTable { get; set; }
         public virtual DbSet<Transfe> Transfe { get; set; }
+        public virtual DbSet<yyy> yyy { get; set; }
     }
 }

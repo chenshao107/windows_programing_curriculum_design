@@ -21,7 +21,6 @@ namespace windows_programing_curriculum_design
         {
             this.Validate();
             this.repairBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.database2DataSet);
 
         }
     }
