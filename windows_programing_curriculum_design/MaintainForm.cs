@@ -54,7 +54,7 @@ namespace windows_programing_curriculum_design
             {
                 database2Entities2.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("提交失败！可能您已经有待处理的问题，请勿重复提交！");
                 return;

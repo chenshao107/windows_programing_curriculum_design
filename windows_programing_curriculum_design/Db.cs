@@ -78,7 +78,7 @@ namespace data
                 {
                     roomId = Convert.ToInt32(account);
 
-                }catch (Exception ex)
+                }catch (Exception )
                 {
                     return null;
                 }
@@ -88,7 +88,7 @@ namespace data
                 try {
                     temp = db.Room.Where(x => x.RoomId == roomId).First();
                 }
-                catch(Exception ex)
+                catch(Exception )
                 {
                     //差不到，返回空
                     return null;

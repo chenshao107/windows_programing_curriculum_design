@@ -39,7 +39,7 @@ namespace windows_programing_curriculum_design
             {
                 database2Entities2.SaveChanges();
             }
-            catch(Exception ex)
+            catch(Exception )
             {
                 MessageBox.Show("充值失败！");
                 this.Close();

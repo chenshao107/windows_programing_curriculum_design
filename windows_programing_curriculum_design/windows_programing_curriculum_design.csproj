@@ -130,6 +130,24 @@
     <Compile Include="RootForm.Designer.cs">
       <DependentUpon>RootForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RootLightWaterForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RootLightWaterForm.Designer.cs">
+      <DependentUpon>RootLightWaterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootMaintainForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RootMaintainForm.Designer.cs">
+      <DependentUpon>RootMaintainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootOtherForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RootOtherForm.Designer.cs">
+      <DependentUpon>RootOtherForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="RootPassword.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -170,6 +188,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RechargeForm.resx">
       <DependentUpon>RechargeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RootForm.resx">
+      <DependentUpon>RootForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RootLightWaterForm.resx">
+      <DependentUpon>RootLightWaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RootMaintainForm.resx">
+      <DependentUpon>RootMaintainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RootOtherForm.resx">
+      <DependentUpon>RootOtherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
