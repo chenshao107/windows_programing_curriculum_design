@@ -16,5 +16,13 @@ namespace windows_programing_curriculum_design
         {
             InitializeComponent();
         }
+
+        private void repairBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.repairBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database2DataSet);
+
+        }
     }
 }
