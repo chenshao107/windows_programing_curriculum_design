@@ -38,9 +38,9 @@ namespace windows_programing_curriculum_design
             if (this._members.Count <2)memberRaadioButton2.Enabled = false; else memberRaadioButton2.Text = _members[1].Name;
             if (this._members.Count < 1) memberRaadioButton1.Enabled = false; else memberRaadioButton1.Text=_members[0].Name;
 
-            //填写成员变量
+            //填写成员变量，默认选中第一个
             this._students = _members.Count == 0 ? null : _members[0];
-
+            if(_members.Count>1)this.memberRaadioButton1.Checked = true;
         }
 
         private void StudentOtherForm_Load(object sender, EventArgs e)
