@@ -15,6 +15,8 @@ namespace windows_programing_curriculum_design
         public RootLightWaterForm()
         {
             InitializeComponent();
+            this.roomTableAdapter.Fill(this.database2DataSet.Room);
+            this.studentTableTableAdapter.Fill(this.database2DataSet.StudentTable);
         }
 
         private void repairBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -22,6 +24,11 @@ namespace windows_programing_curriculum_design
             this.Validate();
             this.repairBindingSource.EndEdit();
 
+        }
+
+        private void RootLightWaterForm_Load(object sender, EventArgs e)
+        {
+            this.rootPasswordTableAdapter.Fill(this.database2DataSet.RootPassword);
         }
     }
 }

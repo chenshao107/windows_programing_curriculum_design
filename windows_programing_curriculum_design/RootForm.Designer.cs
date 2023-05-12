@@ -55,6 +55,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tmpBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database2DataSet = new windows_programing_curriculum_design.Database2DataSet();
+            this.roomBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.roomTableAdapter = new windows_programing_curriculum_design.Database2DataSetTableAdapters.RoomTableAdapter();
+            this.tableAdapterManager = new windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -68,6 +72,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tmpBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // roomBindingSource
@@ -148,6 +154,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(48, 140);
             this.panel4.TabIndex = 0;
+            this.panel4.Click += new System.EventHandler(this.button3_Click);
             // 
             // label5
             // 
@@ -160,6 +167,7 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "报修";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.button3_Click);
             // 
             // button3
             // 
@@ -173,6 +181,7 @@
             this.button3.Size = new System.Drawing.Size(143, 97);
             this.button3.TabIndex = 1;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tableLayoutPanel7
             // 
@@ -214,6 +223,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(48, 138);
             this.panel2.TabIndex = 0;
+            this.panel2.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -226,6 +236,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "水电";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
@@ -241,6 +252,7 @@
             this.button1.Size = new System.Drawing.Size(141, 94);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -283,6 +295,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(48, 142);
             this.panel3.TabIndex = 0;
+            this.panel3.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -295,6 +308,7 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "其他";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.button2_Click);
             // 
             // button2
             // 
@@ -308,6 +322,7 @@
             this.button2.Size = new System.Drawing.Size(143, 99);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel5
             // 
@@ -376,6 +391,31 @@
             // 
             this.tmpBindingSource.DataMember = "tmp";
             // 
+            // database2DataSet
+            // 
+            this.database2DataSet.DataSetName = "Database2DataSet";
+            this.database2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // roomBindingSource1
+            // 
+            this.roomBindingSource1.DataMember = "Room";
+            this.roomBindingSource1.DataSource = this.database2DataSet;
+            // 
+            // roomTableAdapter
+            // 
+            this.roomTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.RepairTableAdapter = null;
+            this.tableAdapterManager.RoomTableAdapter = this.roomTableAdapter;
+            this.tableAdapterManager.RootPasswordTableAdapter = null;
+            this.tableAdapterManager.StudentTableTableAdapter = null;
+            this.tableAdapterManager.TransfeTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = windows_programing_curriculum_design.Database2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.yyyTableAdapter = null;
+            // 
             // RootForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -385,6 +425,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "RootForm";
             this.Text = "RootForm";
+            this.Load += new System.EventHandler(this.RootForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -405,6 +446,8 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tmpBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -436,5 +479,14 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.BindingSource tmpBindingSource;
         private System.Windows.Forms.BindingSource database2DataSetBindingSource;
+        private Database2DataSet database2DataSet;
+        private System.Windows.Forms.BindingSource roomBindingSource1;
+        private Database2DataSetTableAdapters.RoomTableAdapter roomTableAdapter;
+        private Database2DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+
+        //成员变量
+        RootLightWaterForm _rootLightWaterForm;
+        RootOtherForm _rootOtherForm;
+        RootMaintainForm _rootMaintainForm;
     }
 }
