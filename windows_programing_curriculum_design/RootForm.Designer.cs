@@ -127,7 +127,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(203, 50);
             this.label2.TabIndex = 2;
-            this.label2.Text = "627";
+            this.label2.Text = "管理员";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -420,10 +420,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::windows_programing_curriculum_design.Properties.Resources.鲸鱼;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(887, 550);
             this.Controls.Add(this.tableLayoutPanel9);
             this.Controls.Add(this.panel1);
             this.Name = "RootForm";
+            this.ShowIcon = false;
             this.Text = "RootForm";
             this.Load += new System.EventHandler(this.RootForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).EndInit();

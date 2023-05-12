@@ -55,6 +55,7 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.repairBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roomBindingSource)).BeginInit();
@@ -122,12 +123,14 @@
             this.tableLayoutPanel1.Controls.Add(this.roomDataGridView, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(953, 576);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -172,7 +175,7 @@
             this.roomDataGridView.Name = "roomDataGridView";
             this.roomDataGridView.RowHeadersWidth = 51;
             this.roomDataGridView.RowTemplate.Height = 27;
-            this.roomDataGridView.Size = new System.Drawing.Size(756, 530);
+            this.roomDataGridView.Size = new System.Drawing.Size(756, 480);
             this.roomDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -257,7 +260,7 @@
             this.studentTableDataGridView.Name = "studentTableDataGridView";
             this.studentTableDataGridView.RowHeadersWidth = 51;
             this.studentTableDataGridView.RowTemplate.Height = 27;
-            this.studentTableDataGridView.Size = new System.Drawing.Size(185, 530);
+            this.studentTableDataGridView.Size = new System.Drawing.Size(185, 480);
             this.studentTableDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn9
@@ -291,6 +294,22 @@
             this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Width = 125;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(765, 529);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(185, 44);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "保存修改";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // RootLightWaterForm
             // 
@@ -341,5 +360,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.Button button1;
     }
 }
