@@ -488,8 +488,11 @@
         private Database2DataSetTableAdapters.TableAdapterManager tableAdapterManager;
 
         //成员变量
+        //水电窗口
         RootLightWaterForm _rootLightWaterForm;
+        //其他窗口
         RootOtherForm _rootOtherForm;
+        //报修窗口
         RootMaintainForm _rootMaintainForm;
     }
 }
