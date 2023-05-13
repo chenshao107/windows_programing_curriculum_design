@@ -34,13 +34,15 @@ namespace windows_programing_curriculum_design
                 //新建一行记录，显示上去
                 var oneLine = new OneMaintain(record.RoomId, record.Problem+"  预约时间："+record.AppointmentDate);
                 oneLine.Dock = DockStyle.Top;
-                //将一个RemoveOneRecond函数绑定到该按钮；
+                //将一个RemoveOneRecond函数绑定到该按钮；函数委托，绑定
                 oneLine.button1.Click +=  delegate (object sender1, EventArgs e1) { RemoveOneRecond(sender1 , ref oneLine); };//匿名传参
                 this.panel1.Controls.Add(oneLine);
             }
         }
+
         public void RemoveOneRecond(object sender,ref OneMaintain oneLine)
         {
+            //传递引用，指定原来的控件
             //oneMaintain为发出信号的控件
             //定义数据库实体
             Database2Entities2 database2Entities2;
